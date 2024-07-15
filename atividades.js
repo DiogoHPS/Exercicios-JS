@@ -345,3 +345,18 @@
 
 //Agora Interativos
 //Q1
+// document.getElementById('calcForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     const segunda = parseFloat(document.getElementById('Segunda').value) || 0;
+//     const terca = parseFloat(document.getElementById('Terça').value) || 0;
+//     const quarta = parseFloat(document.getElementById('Quarta').value) || 0;
+//     const quinta = parseFloat(document.getElementById('Quinta').value) || 0;
+//     const sexta = parseFloat(document.getElementById('Sexta').value) || 0;
+//     const sabado = parseFloat(document.getElementById('Sabado').value) || 0;
+//     const domingo = parseFloat(document.getElementById('Domingo').value) || 0;
+
+//     const total = segunda + terca + quarta + quinta + sexta + sabado + domingo;
+//     alert(`O Total durante a Semana é: ${total}`);
+// });
+
+//Q2
