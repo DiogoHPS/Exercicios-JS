@@ -6,36 +6,58 @@
     <title>Exercicios Interativos</title>
 </head>
 <body>
-    <!-- Q1 -->
-     <!-- <h1>COLOQUE OS VALORES</h1>
+<!-- Q1 -->
     <form id="calcForm">
+        <fieldset>
+            <legend><b>Q1</b> - Calculo Semanal</legend>
+            <label for="Segunda">Segunda-Feira:</label>
+            <input type="text" id="Segunda" name="Segunda" placeholder="Valor Segunda-Feira"><br>
+            
+            <label for="Terça">Terça-Feira:</label>
+            <input type="text" id="Terça" name="Terça" placeholder="Valor Terça-Feira"><br>
+            
+            <label for="Quarta">Quarta-Feira:</label>
+            <input type="text" id="Quarta" name="Quarta" placeholder="Valor Quarta-Feira"><br>
 
-        <label for="Segunda">Segunda-Feira:</label>
-        <input type="text" id="Segunda" name="Segunda" placeholder="Valor Segunda-Feira"><br>
-        
-        <label for="Terça">Terça-Feira:</label>
-        <input type="text" id="Terça" name="Terça" placeholder="Valor Terça-Feira"><br>
-        
-        <label for="Quarta">Quarta-Feira:</label>
-        <input type="text" id="Quarta" name="Quarta" placeholder="Valor Quarta-Feira"><br>
+            <label for="Quinta">Quinta-Feira:</label>
+            <input type="text" id="Quinta" name="Quinta" placeholder="Valor Quinta-Feira"><br>
+            
+            <label for="Sexta">Sexta-Feira:</label>
+            <input type="text" id="Sexta" name="Sexta" placeholder="Valor Sexta-Feira"><br>
+            
+            <label for="Sabado">Sabado:</label>
+            <input type="text" id="Sabado" name="Sabado" placeholder="Valor Sabado"><br>
 
-        <label for="Quinta">Quinta-Feira:</label>
-        <input type="text" id="Quinta" name="Quinta" placeholder="Valor Quinta-Feira"><br>
-        
-        <label for="Sexta">Sexta-Feira:</label>
-        <input type="text" id="Sexta" name="Sexta" placeholder="Valor Sexta-Feira"><br>
-        
-        <label for="Sabado">Sabado:</label>
-        <input type="text" id="Sabado" name="Sabado" placeholder="Valor Sabado"><br>
-
-        <label for="Domingo">Domingo:</label>
-        <input type="text" id="Domingo" name="Domingo" placeholder="Valor Domingo"><br>
-        <input type="submit" value="BOLSONARO"> 
-    </form> -->
-
-    <!-- Q2 -->
-     
-
+            <label for="Domingo">Domingo:</label>
+            <input type="text" id="Domingo" name="Domingo" placeholder="Valor Domingo"><br>
+            <input type="submit" id="calcFormButton" value="Enviar"> 
+        </fieldset>
+    </form>
+    <br>
+<!-- Q2 -->
+<form id="numberForm">
+    <fieldset>
+        <legend><b>Q2</b> - Insira os Números</legend>
+        <div class="form-group">
+            <label for="numbers">Números (separados por vírgula):</label>
+            <input type="text" id="numbers" name="numbers">
+        </div>
+        <input type="submit" id="evenButton" value="Classificar">
+    </fieldset>
+</form>
+<br>
+<!-- Q3 -->
+    <form id="palindromeForm">
+        <fieldset>
+        <legend><b>Q3</b> - Ensina a palavra para verificar Palíndromo</legend>
+            <label for="word">Palavra:</label>
+            <input type="text" id="word" name="world"><br>
+            <input type="submit" id="palindromeButton" value="Verificar">
+        </fieldset>
+    </form>
+<br>
+<!-- Q5 -->
+    
 <script src="atividades.js"></script>
 </body>
 </html>

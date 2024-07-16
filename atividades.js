@@ -345,18 +345,68 @@
 
 //Agora Interativos
 //Q1
-// document.getElementById('calcForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     const segunda = parseFloat(document.getElementById('Segunda').value) || 0;
-//     const terca = parseFloat(document.getElementById('Terça').value) || 0;
-//     const quarta = parseFloat(document.getElementById('Quarta').value) || 0;
-//     const quinta = parseFloat(document.getElementById('Quinta').value) || 0;
-//     const sexta = parseFloat(document.getElementById('Sexta').value) || 0;
-//     const sabado = parseFloat(document.getElementById('Sabado').value) || 0;
-//     const domingo = parseFloat(document.getElementById('Domingo').value) || 0;
+document.getElementById('calcFormButton').addEventListener('click', function(event) {
+    event.preventDefault();
+    const segunda = parseFloat(document.getElementById('Segunda').value) || 0;
+    const terca = parseFloat(document.getElementById('Terça').value) || 0;
+    const quarta = parseFloat(document.getElementById('Quarta').value) || 0;
+    const quinta = parseFloat(document.getElementById('Quinta').value) || 0;
+    const sexta = parseFloat(document.getElementById('Sexta').value) || 0;
+    const sabado = parseFloat(document.getElementById('Sabado').value) || 0;
+    const domingo = parseFloat(document.getElementById('Domingo').value) || 0;
 
-//     const total = segunda + terca + quarta + quinta + sexta + sabado + domingo;
-//     alert(`O Total durante a Semana é: ${total}`);
-// });
+    const total = segunda + terca + quarta + quinta + sexta + sabado + domingo;
+    alert(`O Total durante a Semana é: ${total}`);
+});
 
 //Q2
+    document.getElementById('evenButton').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // Obtendo os números do input
+    let numbers = document.getElementById('numbers').value.split(',').map(Number);
+
+    // Arrays para armazenar números pares e ímpares
+    let evenNumbers = [];
+    let oddNumbers = [];
+
+    // Classificando os números
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            evenNumbers.push(numbers[i]);
+        } else {
+            oddNumbers.push(numbers[i]);
+        }
+    }
+
+    // Exibindo os resultados
+    alert(`Pares [${evenNumbers}] - Impares [${oddNumbers}]`)
+});
+
+// Q3
+    document.getElementById('palindromeButton').addEventListener('click', function(event){
+        event.preventDefault();
+       
+        let word = document.getElementById('word')
+
+        word = word.value.toLowerCase();
+
+        let arrayWord = word.split('');
+
+        let arrayWordInvert = [];
+        for (let i = arrayWord.length - 1;i >= 0; i--) {
+            arrayWordInvert.push(arrayWord[i]);
+        };
+
+        let string = arrayWord.join('');
+        let stringInvert = arrayWordInvert.join('');
+
+        if (string === stringInvert) {
+            alert(`A Palavra "${word}" é um Palíndromo`)
+        } else {
+            alert(`A Palavra "${word}" não é um Palíndromo`)
+        }
+    });
+
+// Q5
+ 
