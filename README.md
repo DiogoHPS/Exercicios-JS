@@ -1,5 +1,6 @@
 # Exercícios Algoritmos/Lógica de Programação
-
+<!-- Os exercicios devem ser resolvidos da melhor forma possível -->
+<!-- Se possível resolva tanto sem interatividade quanto com Interatividade -->
 ## Questões Principais
 
 1. João está analisando os lucros de sua loja ao longo da semana. Ele registrou os lucros diários em um array e quer saber o lucro total da semana.
