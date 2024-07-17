@@ -409,4 +409,45 @@ document.getElementById('calcFormButton').addEventListener('click', function(eve
     });
 
 // Q5
- 
+    document.getElementById('vowelsCountButton').addEventListener('click', function(event){
+        event.preventDefault();
+
+        let phrase = document.getElementById('phrase').value
+
+        let ordenedPhrase = phrase.replace(/\s+/g, '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        
+        let vowel = document.getElementById('vowel').value
+        vowel = vowel.replace(/\s+/g, '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
+        let count = 0;
+
+        for (let char of ordenedPhrase) {
+            if (vowel.includes(char)) {
+                    count++;
+            }
+        }
+        alert(`Na Frase "${phrase}" aparece ${count} vezes a vogal "${vowel}"`)
+    });
+
+// Q6
+    document.addEventListener('DOMContentLoaded', function() {
+        const textarea = document.getElementById('names');
+
+        textarea.addEventListener('input', function() {
+            // Redefine a altura para calcular a nova altura necessária
+            textarea.style.height = 'auto';
+            textarea.style.width = 'auto';
+            // Define a altura para a altura rolável do textarea
+            textarea.style.height = textarea.scrollHeight + 'px';
+        });
+    });
+    document.getElementById('ordenedNamesButton').addEventListener('click', function(event){
+        event.preventDefault();
+
+        let names = document.getElementById('names').value
+        names =  names.split(/[\s,;/]+/).filter(name => name.trim() !== '').map(name => name.trim()).sort().join(', ');
+
+        alert(`Nomes ordenados: ${names}`)
+    });
+
+// Q7

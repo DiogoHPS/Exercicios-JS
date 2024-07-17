@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicios Interativos</title>
 </head>
+<style>
+    textarea {
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            min-height: 40px; /* Ajuste a altura mínima conforme necessário */
+            resize: none; /* Evita redimensionamento manual */
+    }
+</style>
 <body>
 <!-- Q1 -->
     <form id="calcForm">
@@ -35,17 +44,17 @@
     </form>
     <br>
 <!-- Q2 -->
-<form id="numberForm">
-    <fieldset>
-        <legend><b>Q2</b> - Insira os Números</legend>
-        <div class="form-group">
-            <label for="numbers">Números (separados por vírgula):</label>
-            <input type="text" id="numbers" name="numbers">
-        </div>
-        <input type="submit" id="evenButton" value="Classificar">
-    </fieldset>
-</form>
-<br>
+    <form id="numberForm">
+        <fieldset>
+            <legend><b>Q2</b> - Insira os Números</legend>
+            <div class="form-group">
+                <label for="numbers">Números (separados por vírgula):</label>
+                <input type="text" id="numbers" name="numbers">
+            </div>
+            <input type="submit" id="evenButton" value="Classificar">
+        </fieldset>
+    </form>
+    <br>
 <!-- Q3 -->
     <form id="palindromeForm">
         <fieldset>
@@ -55,9 +64,34 @@
             <input type="submit" id="palindromeButton" value="Verificar">
         </fieldset>
     </form>
-<br>
+    <br>
 <!-- Q5 -->
-    
+    <form id="coutPhraseVowels">
+        <fieldset>
+        <legend><b>Q5(n tive saco de fazer a Q4)</b> - Ensira a frase e a vogal para ser contabilizada</legend>
+            <label for="phrase">Ensira a frase: </label>
+            <input type="text" id="phrase" name="phrase"><br>
+
+            <label for="vowel">Ensira a vogal a ser contada: </label>
+            <input type="text" name="vowel" id="vowel"><br>
+
+            <input type="submit" id="vowelsCountButton" value="Verificar">
+       </fieldset>
+    </form>
+    <br>
+<!-- Q6 -->
+    <form id="ordenedNames">
+        <fieldset>
+        <legend><b>Q6</b> Ensira os Nomes para ordena-los</legend>
+        
+        <label for="names">Ensira os Nomes: </label>
+        <textarea name="names" id="names" rows="0"></textarea>
+
+        <input type="submit" id="ordenedNamesButton" value="Ordenar!">
+        </fieldset>
+    </form>
+    <br>
+<!--  -->
 <script src="atividades.js"></script>
 </body>
 </html>
