@@ -343,111 +343,249 @@
 // }
 // maiorIdadeCNH("Diogo", 18)
 
-//Agora Interativos
-//Q1
-document.getElementById('calcFormButton').addEventListener('click', function(event) {
-    event.preventDefault();
-    const segunda = parseFloat(document.getElementById('Segunda').value) || 0;
-    const terca = parseFloat(document.getElementById('Terça').value) || 0;
-    const quarta = parseFloat(document.getElementById('Quarta').value) || 0;
-    const quinta = parseFloat(document.getElementById('Quinta').value) || 0;
-    const sexta = parseFloat(document.getElementById('Sexta').value) || 0;
-    const sabado = parseFloat(document.getElementById('Sabado').value) || 0;
-    const domingo = parseFloat(document.getElementById('Domingo').value) || 0;
+//Questões secundarias
+//1
+// function calcValues(a, b, c) {
+//     let soma = a + b;
+//     console.log(`A soma entre ${a} e ${b} é igual a ${soma}`);
+//     if (soma > c) {
+//         console.log(`A soma entre ${a} e ${b} é maior que c:${c}`);
+//     } else if (soma === c) {
+//         console.log(`A soma entre ${a} e ${b} é igual a c:${c}`);
+//     } else if (soma < c) {
+//         console.log(`A soma entre ${a} e ${b} é menor que c:${c}`);
+//     }
+// }
+// calcValues(2, 5, 8);
 
-    const total = segunda + terca + quarta + quinta + sexta + sabado + domingo;
-    alert(`O Total durante a Semana é: ${total}`);
-});
+//2
+// function imparParNegPosi(numero) {
+//     if(numero % 2 == 0){
+//         console.log(`${numero} é par`);
+//     }else{
+//         console.log(`${numero} é impar`);
+//     }
+//     if(numero > 0){
+//         console.log(`${numero} é Positivo`);
+//     }else{
+//         console.log(`${numero} é Negativo`);
+//     }
+// }
+// imparParNegPosi(-12)
 
-//Q2
-    document.getElementById('evenButton').addEventListener('click', function(event) {
-    event.preventDefault();
+//3
+// function calcDef(a,b) {
+//     let c;
+//     if(a == b){
+//         c = a + b;
+//         console.log(c);
+//     }else{
+//         c = a * b;
+//         console.log(c);
+//     }
+// }
+// calcDef(2,2)
 
-    // Obtendo os números do input
-    let numbers = document.getElementById('numbers').value.split(',').map(Number);
+//4
+// function susana(numero) {
+//     let antecessor = numero - 1
+//     let sucessor = numero + 1
+//     console.log(`O numero ${numero} seu antecessor é ${antecessor} e seu sucessor é ${sucessor}`);
+// }
+// susana(5)
 
-    // Arrays para armazenar números pares e ímpares
-    let evenNumbers = [];
-    let oddNumbers = [];
+//6
+// function porcentageCalc(numero) {
+//     const reajusteVal = numero * 0.05 //reajuste é aumentar, e feito o calculo de quanto é a porcentagem de acordo com o número
+//     const total = numero + reajusteVal //o total seria o valor do reajuste mais o número, precisamos dizer quanto será o reajuste para aí sim somar ele
+//     //Ou, poderia ser colocado diretamente em total o 1.05, que já calcula o valor de reajuste junto do tal(uma brisa dos codigos ai(mais de cria fazer assi))
+//     console.log(`o rejuste de ${numero} é ${total}`);
+// }
+// porcentageCalc(250)
 
-    // Classificando os números
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] % 2 === 0) {
-            evenNumbers.push(numbers[i]);
-        } else {
-            oddNumbers.push(numbers[i]);
-        }
-    }
+//8
+// function intDecrecent(num1,num2,num3){
+//     let numbers = [num1,num2,num3]
+//     numbers.sort(function(a,b){
+//         return b - a
+//     });
+//     console.log(numbers);
+// }
+// intDecrecent(5,6,3)
 
-    // Exibindo os resultados
-    alert(`Pares [${evenNumbers}] - Impares [${oddNumbers}]`)
-});
+//9
+// function calcBMI(weight,heigth) {
+//     let bmi = weight / (heigth * heigth);
+//     let bmifixed = bmi.toFixed(2)
 
-// Q3
-    document.getElementById('palindromeButton').addEventListener('click', function(event){
-        event.preventDefault();
+//     if(bmifixed >= 40){
+//         console.log(`IMC = ${bmifixed} -> Obesidade grau III (mórbida)`);
+//     }
+//     if(bmifixed <= 39.9 && bmifixed >= 35.0){
+//         console.log(`IMC = ${bmifixed} -> Obesidade grau II (severa)`);
+//     }
+//     if(bmifixed <= 34.9 && bmifixed >= 30.0){
+//         console.log(`IMC = ${bmifixed} -> Obesidade grau I`);
+//     }
+//     if(bmifixed <= 29.9 && bmifixed >= 25.0){
+//         console.log(`IMC = ${bmifixed} -> Levemente acima do peso`);
+//     }
+//     if(bmifixed <= 24.9 && bmifixed >= 18.6){
+//         console.log(`IMC = ${bmifixed} -> Peso ideal (parabéns)`);
+//     }
+//     else{
+//         console.log(`IMC = ${bmifixed} -> Abaixo do peso`);
+//     }
+// }
+// calcBMI(30,1.54);
+
+//10
+// function mediaCalc(nota1,nota2,nota3) {
+//     let media = nota1 + nota2 + nota3
+//        media = media / 3
+//     console.log(media);   
+// }
+// mediaCalc(10,5,6)
+
+//11
+// function calcNotes(name,...notes){
+//     let sum = notes.reduce(function(accumulator, currentValue){
+//         return accumulator + currentValue
+//     }, 0)
+//     let media = sum / notes.length;
+//     media = media.toFixed(2)
+
+//     if(media >= 7){
+//         console.log(`O aluno ${name} foi APROVADO com média ${media}`);
+//     }
+//     else{
+//         console.log(`O aluno ${name} foi REPROVADO com média ${media}`);
+//     }
+// }
+// calcNotes("diogenes",5,7,8,4,8,10,5)
+
+
+// //Agora Interativos
+// //Q1
+// document.getElementById('calcFormButton').addEventListener('click', function(event) {
+//     event.preventDefault();
+//     const segunda = parseFloat(document.getElementById('Segunda').value) || 0;
+//     const terca = parseFloat(document.getElementById('Terça').value) || 0;
+//     const quarta = parseFloat(document.getElementById('Quarta').value) || 0;
+//     const quinta = parseFloat(document.getElementById('Quinta').value) || 0;
+//     const sexta = parseFloat(document.getElementById('Sexta').value) || 0;
+//     const sabado = parseFloat(document.getElementById('Sabado').value) || 0;
+//     const domingo = parseFloat(document.getElementById('Domingo').value) || 0;
+
+//     const total = segunda + terca + quarta + quinta + sexta + sabado + domingo;
+//     alert(`O Total durante a Semana é: ${total}`);
+// });
+
+// //Q2
+//     document.getElementById('evenButton').addEventListener('click', function(event) {
+//     event.preventDefault();
+
+//     // Obtendo os números do input
+//     let numbers = document.getElementById('numbers').value.split(',').map(Number);
+
+//     // Arrays para armazenar números pares e ímpares
+//     let evenNumbers = [];
+//     let oddNumbers = [];
+
+//     // Classificando os números
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] % 2 === 0) {
+//             evenNumbers.push(numbers[i]);
+//         } else {
+//             oddNumbers.push(numbers[i]);
+//         }
+//     }
+
+//     // Exibindo os resultados
+//     alert(`Pares [${evenNumbers}] - Impares [${oddNumbers}]`)
+// });
+
+// // Q3
+//     document.getElementById('palindromeButton').addEventListener('click', function(event){
+//         event.preventDefault();
        
-        let word = document.getElementById('word')
+//         let word = document.getElementById('word')
 
-        word = word.value.toLowerCase();
+//         word = word.value.toLowerCase();
 
-        let arrayWord = word.split('');
+//         let arrayWord = word.split('');
 
-        let arrayWordInvert = [];
-        for (let i = arrayWord.length - 1;i >= 0; i--) {
-            arrayWordInvert.push(arrayWord[i]);
-        };
+//         let arrayWordInvert = [];
+//         for (let i = arrayWord.length - 1;i >= 0; i--) {
+//             arrayWordInvert.push(arrayWord[i]);
+//         };
 
-        let string = arrayWord.join('');
-        let stringInvert = arrayWordInvert.join('');
+//         let string = arrayWord.join('');
+//         let stringInvert = arrayWordInvert.join('');
 
-        if (string === stringInvert) {
-            alert(`A Palavra "${word}" é um Palíndromo`)
-        } else {
-            alert(`A Palavra "${word}" não é um Palíndromo`)
-        }
-    });
+//         if (string === stringInvert) {
+//             alert(`A Palavra "${word}" é um Palíndromo`)
+//         } else {
+//             alert(`A Palavra "${word}" não é um Palíndromo`)
+//         }
+//     });
 
-// Q5
-    document.getElementById('vowelsCountButton').addEventListener('click', function(event){
-        event.preventDefault();
+// // Q5
+//     document.getElementById('vowelsCountButton').addEventListener('click', function(event){
+//         event.preventDefault();
 
-        let phrase = document.getElementById('phrase').value
+//         let phrase = document.getElementById('phrase').value
 
-        let ordenedPhrase = phrase.replace(/\s+/g, '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+//         let ordenedPhrase = phrase.replace(/\s+/g, '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
         
-        let vowel = document.getElementById('vowel').value
-        vowel = vowel.replace(/\s+/g, '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+//         let vowel = document.getElementById('vowel').value
+//         vowel = vowel.replace(/\s+/g, '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 
-        let count = 0;
+//         let count = 0;
 
-        for (let char of ordenedPhrase) {
-            if (vowel.includes(char)) {
-                    count++;
-            }
-        }
-        alert(`Na Frase "${phrase}" aparece ${count} vezes a vogal "${vowel}"`)
-    });
+//         for (let char of ordenedPhrase) {
+//             if (vowel.includes(char)) {
+//                     count++;
+//             }
+//         }
+//         alert(`Na Frase "${phrase}" aparece ${count} vezes a vogal "${vowel}"`)
+//     });
 
-// Q6
-    document.addEventListener('DOMContentLoaded', function() {
-        const textarea = document.getElementById('names');
+// // Q6
+//     document.addEventListener('DOMContentLoaded', function() {
+//         const textarea = document.getElementById('names');
 
-        textarea.addEventListener('input', function() {
-            // Redefine a altura para calcular a nova altura necessária
-            textarea.style.height = 'auto';
-            textarea.style.width = 'auto';
-            // Define a altura para a altura rolável do textarea
-            textarea.style.height = textarea.scrollHeight + 'px';
-        });
-    });
-    document.getElementById('ordenedNamesButton').addEventListener('click', function(event){
-        event.preventDefault();
+//         textarea.addEventListener('input', function() {
+//             // Redefine a altura para calcular a nova altura necessária
+//             textarea.style.height = 'auto';
+//             textarea.style.width = 'auto';
+//             // Define a altura para a altura rolável do textarea
+//             textarea.style.height = textarea.scrollHeight + 'px';
+//         });
+//     });
+//     document.getElementById('ordenedNamesButton').addEventListener('click', function(event){
+//         event.preventDefault();
 
-        let names = document.getElementById('names').value
-        names =  names.split(/[\s,;/]+/).filter(name => name.trim() !== '').map(name => name.trim()).sort().join(', ');
+//         let names = document.getElementById('names').value
+//         names =  names.split(/[\s,;/]+/).filter(name => name.trim() !== '').map(name => name.trim()).sort().join(', ');
 
-        alert(`Nomes ordenados: ${names}`)
-    });
+//         alert(`Nomes ordenados: ${names}`)
+//     });
 
-// Q7
+// // Q7
+//     document.getElementById('phraseForCountVowelsButton').addEventListener('click', function(event){
+//         event.preventDefault();
+
+//         let phrase = document.getElementById('phraseForCountVowels').value
+//         phrase =  phrase.replace(/\s+/g, '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
+//         let vowel = ["a","e","i","o","u"]
+//         let count = 0;
+
+//         for(let char of phrase){
+//             if (vowel.includes(char)) {
+//                 count++;
+//             }
+//         }
+//         alert(`Na frase aparecem ${count} vogais`)
+//     });
