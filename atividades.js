@@ -464,6 +464,99 @@
 // }
 // calcNotes("diogenes",5,7,8,4,8,10,5)
 
+//12
+// function pagamentoCalc(valor,forma) {
+//     let desconto = 0;
+//     let juros = 0;
+
+//     if (forma === "dinheiro") {
+//         desconto = 0.15;
+//     } else if (forma === "cartao-avista") {
+//         desconto = 0.10;
+//     } else if (forma === "cartao-2x") {
+//         desconto = 0;
+//         juros = 0;
+//     } else if (forma === "cartao-3x") {
+//         desconto = 0;
+//         juros = 0.10;
+//     }  
+//     let valorFinal = valor * (1 - desconto) * (1 + juros);
+// console.log(`pagamento: RS ${valorFinal.toFixed(2)}`);
+// }
+// pagamentoCalc(1300,"dinheiro");
+// pagamentoCalc(1300,"cartao-avista");
+// pagamentoCalc(1300, "cartao-2x");
+// pagamentoCalc(1300, "cartao-3x");
+
+//13
+// function calculaIdade(nome,idade) {
+//     if (idade >= 18) {
+//         console.log(`${nome} é maior de idade`);
+//     }
+//     else{
+//         console.log(`${nome} é menor de idade`);
+//     }
+// }
+// calculaIdade("Diogo",12)
+
+//14
+// function trocaTroca(A,B) {
+//     let aux = A; //é criada a variavel aux, para que o valor de A, fique salvo ali, enquanto trocamos os lados
+//     A = B;
+//     B = aux;
+//     console.log(`A = ${A}`)
+//         console.log(`B = ${B}`)
+// }
+// trocaTroca(5,2)
+
+//15
+// function calcularIdade(diaNascimento, mesNascimento, anoNascimento) {
+//     let dataAtual = new Date();
+//     let diaAtual = dataAtual.getDate();
+//     let mesAtual = dataAtual.getMonth() + 1;
+//     let anoAtual = dataAtual.getFullYear();
+
+//     let anos = anoAtual - anoNascimento;
+//     let meses = mesAtual - mesNascimento;
+//     let dias = diaAtual - diaNascimento;
+
+//     if (dias < 0) {
+//         meses--;
+//         dias += 30; // Assumindo 30 dias por mês
+//     }
+
+//     if (meses < 0) {
+//         anos--;
+//         meses += 12;
+//     }
+
+//     console.log(`${anos} anos, ${meses} meses, e ${dias} dias de vida`);
+// }
+// calcularIdade(3, 7, 2003);
+
+//16
+// function trilagulo(lado1,lado2,lado3) {
+//     if (lado1 === lado2 && lado2 === lado3 && lado3 === lado1) {
+//         console.log("equilatero");
+//     }
+//     else if (lado1 === lado2 || lado2 === lado3 || lado1 === lado3) {
+//         console.log("isosceles");
+//     }
+//     else{
+//         console.log("escaleno");
+//     }
+// }
+// trilagulo(2,2,2);
+// trilagulo(2,2,5);
+// trilagulo(2,4,5);
+
+//17
+// function fToC(temp) {
+//     let C = ((temp - 32) * 5 / 9)
+//     console.log(`A temperatura ${temp}°F em Celcius é: ${C.toFixed(2)}°C`);
+// }
+// fToC(51)
+
 
 // //Agora Interativos
 // //Q1
